@@ -67,7 +67,7 @@ main form label input {
 main form .div-encontrar-senha {
   display: flex;
   justify-content: flex-end;
-  padding: 15px;
+  padding: 20px;
   text-decoration: none;
 }
 main form .div-encontrar-senha a {
@@ -190,7 +190,7 @@ main .section-img img {
   }
 
   main form {
-    padding-top: 0;
+    padding: 0 15px 15px ;
     background-color: rgb(255, 255, 255);
     position: relative;
     bottom: 20px;
