@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/css.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <section
+        class="form-content"
+        role="region"
+        aria-labelledby="form-content"
+      >
+        <form action="login.php" method="post">
+          <h1>Bem vindo de volta!</h1>
+
+          <p>
+             Descubra ofertas exclusivas, produtos
+            incríveis e uma experiência de compra única, feita especialmente
+            para você!
+          </p>
+
+          <label for="nome" class="label-nome">
+            Nome
+            <input type="text" name="nome" id="nome" required />
+          </label>
+
+          <label for="password" class="label-senha">
+            Senha
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              minlength="8"
+            />
+            <i class='bx bx-low-vision'></i>
+          </label>
+          <div class="div-encontrar-senha">
+            <a href="#">Esqueceu a senha?</a>
+          </div>
+          <button type="submit">Entrar</button>
+          <div class="div-hr">
+            <hr />
+            <span>Ou continue com</span>
+          </div>
+          <div class="div-icones">
+            <a href="#">
+              <i class="bx bxl-google"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-apple"></i>
+            </a>
+            <a href="#">
+                <i class='bx bxl-facebook' ></i>
+            </a>
+          </div>
+        </form>
+      </section>
+
+      <section class="section-img" role="region" aria-labelledby="section-img">
+        <img hidde src="img/Screenshot.png" alt="section-img" />
+      </section>
+    </main>
+  </body>
+</html>

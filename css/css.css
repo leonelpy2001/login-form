@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
+
+* {
+  font-family: "Sen", serif;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.19);
+  display: grid;
+  grid-template-columns: 35% 1fr;
+}
+
+main form {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+}
+
+main form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 39px;
+  line-height: 38px;
+  font-weight: bolder;
+}
+
+main form p {
+  width: 90%;
+  opacity: 0.5;
+  margin: 0 auto;
+  text-align: center;
+  font-size: small;
+  margin-bottom: 30px;
+}
+
+main form p {
+  text-align: center;
+  font-size: small;
+}
+
+main form label {
+  border-radius: 30px;
+  margin-top: 15px;
+
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+main form label input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+
+main form .div-encontrar-senha {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  text-decoration: none;
+}
+main form .div-encontrar-senha a {
+  text-decoration: none;
+  font-size: small;
+}
+
+main form button {
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: small;
+  background-color: #000000;
+  border: 1px solid #00000074;
+  transition: 0.3s;
+}
+main form button:hover {
+  background-color: rgb(197, 197, 197);
+  color: #000;
+  border: 1px solid #00000000;
+  transition: 0.3s;
+}
+main form .div-hr {
+  margin: 20px;
+  position: relative;
+}
+
+main form .div-hr span {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  font-size: small;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main form .div-hr hr {
+  border-bottom: none;
+  opacity: 0.3;
+}
+
+main form .div-icones {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  padding: 15px;
+  font-size: 32px;
+}
+
+main form .div-icones a {
+  padding: 9px;
+  color: white;
+  border-radius: 50%;
+  background-color: #000000;
+  text-decoration: none;
+  border: 1px solid #00000074;
+  transition: 0.3s;
+}
+main form .div-icones a i {
+  display: block;
+  font-size: 28px;
+}
+
+main form .div-icones a:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #00000074;
+  transition: 0.3s;
+}
+main .section-img {
+  padding: 40px 40px 0 0;
+}
+main .section-img img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+@media (max-width: 1420px) {
+  main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .section-img {
+    padding: 0;
+
+    border-radius: unset;
+    width: 100%;
+  }
+  main .section-img img {
+    position: relative;
+    padding: 20px;
+    border-radius: 50px;
+    width: 100%;
+  }
+  main form {
+    padding-top: 0;
+  }
+
+  main form h1 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 780px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  main .section-img img {
+    position: relative;
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  main form {
+    padding-top: 0;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 20px;
+    z-index: 2;
+    border-radius: 26px 26px 0 0;
+  }
+}
